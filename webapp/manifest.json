@@ -109,6 +109,28 @@
       "config": {},
       "routes": [],
       "targets": {}
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+            "controllerName": "travelcrud.ext.controller.ListReportExt",
+            "sap.ui.generic.app": {
+              "Travel": {
+                "EntitySet": "Travel",
+                "Actions": {
+                  "Mass Create": {
+                    "id": "massCreate",
+                    "text": "{i18n>massCreate}",
+                    "press": "onMassCreate",
+                    "requiresSelection": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "sap.ui.generic.app": {
