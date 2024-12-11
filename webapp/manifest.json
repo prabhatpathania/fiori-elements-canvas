@@ -78,6 +78,14 @@
       "compact": true,
       "cozy": true
     },
+    "componentUsages": {
+      "myCanvasComponent": {
+        "name": "travelcrud.myComponent",
+        "settings": {},
+        "componentData": {}
+      }
+    },
+
     "models": {
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
@@ -167,6 +175,25 @@
             "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
             "component": {
               "name": "sap.suite.ui.generic.template.ObjectPage"
+            }
+          },
+          "myCanvasPage": {
+            "component": {
+              "name": "sap.suite.ui.generic.template.Canvas",
+              "settings": {
+                "requiredControls": {
+                  "footerBar": true
+                }
+              }
+            },
+            "implementingComponent": {
+              "componentUsage": "myCanvasComponent",
+              "settings": {}
+            },
+            "routingSpec": {
+              "noOData": true,
+              "noKey": true,
+              "routeName": "toMassCreate"
             }
           }
         }
