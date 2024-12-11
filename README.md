@@ -1,4 +1,4 @@
-# fiori-elements-canvas
+# Adding custom SAPUI5 XML view to Fiori elements application using canvas
 Extending SAP Fiori elements project by loading a custom view (XML) on pressing an extended action
 
 SAP Reference Documentation URLs:
